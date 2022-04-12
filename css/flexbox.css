@@ -1,0 +1,148 @@
+.headerPrincipal .container{
+    display: flex;
+    align-items: center; /*Alinea los items al centro*/
+    justify-content: space-between; /*Coloca los elementos a los costados, generando un espacio entre ellos*/
+
+}
+
+.headerPrincipal-nav{
+    display: flex;
+}
+
+@media(max-width: 768px){
+    .headerPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav{
+        flex-direction: column;
+    }
+}
+
+/*Todo -------------------------------------------------------------------------*/
+
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;
+}
+
+@media(max-width: 768px){
+    .contenidoPrincipal-cursos{
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+}
+
+/*Todo -------------------------------------------------------------------------*/
+
+.videoSobre .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoSobre-video{
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 2;
+}
+
+@media(max-width: 768px){
+    .videoSobre .container{
+        flex-direction: column;
+    }
+}
+
+/*Todo -------------------------------------------------------------------------*/
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-navMap-list .caja-navMap-list{
+    display: flex;
+    width: 23%;
+    flex-direction: column; /*Alinea los elementos uno debajo del otro verticalmente*/
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .rodapePrincipal-navMap-list{
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-navMap-list .caja-navMap-list{
+        width: 100%;
+    }
+}
+
+/*Todo -------------------------------------------------------------------------*/
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+@media(max-width: 768px){
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        align-items: center;
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+
+    .headerPrincipal-nav-link-app{
+        order: -1;
+    }
+}
+
+
+
+
+
+
+
